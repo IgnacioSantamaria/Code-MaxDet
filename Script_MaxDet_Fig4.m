@@ -1,6 +1,6 @@
 
 % This script shows the performance of the Max-Det BD-RIS solution
-% described in [A]. It allows to reproduce the results in Fig. 3 of [A], showing
+% described in [A]. It allows to reproduce the results in Fig. 4 of [A], showing
 % the achievable rate vs number of BD-RIS elements. In this scenario, there is a direct link
 % and we evaluate the impact of the phase correction term (solution of Eq.
 % (17))
@@ -169,5 +169,6 @@ ylabel('Rate (b/s/Hz)');
 xlabel('Scale direct link (a)');
 grid on;
 hold off
+
 
 
