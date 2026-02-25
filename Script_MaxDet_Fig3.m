@@ -17,8 +17,8 @@
 % e) Random BDRIS
 % f) No RIS
 %
-% [A] I. Santamaria, M. Soleymani, J. Gutierrez, E. Jorswieck, "On the optimal
-% symmetric BD-RIS maximizing capacity in a MIMO link" submitted to IEEE
+% [A] I. Santamaria, M. Soleymani, J. Gutierrez, E. Jorswieck, "Optimal symmetric low-rank BD-RIS configuration 
+% maximizing the determinant of a MIMO link" submitted to IEEE
 % Transactions on Signal Processing, 2026.
 
 % I. Santamaria, UC Jan. 2026
@@ -169,4 +169,5 @@ ylabel('Rate (b/s/Hz)');
 xlabel('Scale direct link (a)');
 grid on;
 hold off
+
 
