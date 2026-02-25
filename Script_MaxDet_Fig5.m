@@ -1,7 +1,7 @@
 
 % This Script illustrates the achievable rate vs number of stems of BD-RIS
 % implemente with the q-stem topology with reduced circuit complexity. 
-% It allows to reproduce the results of Fig. 4 of [A]. To
+% It allows to reproduce the results of Fig. 5 of [A]. To
 % get the B matrix (susceptance matrix) of the q-stem topology we solve a
 % linear system of equations. Depending on the rank of the scattering
 % matrix this solution can be exavt (if q=2r-1, when the rank is 2r as in
@@ -135,5 +135,6 @@ ylabel('Rate (b/s/Hz)');
 xlabel('q (number of stems)');
 grid on;
 hold off
+
 
 
