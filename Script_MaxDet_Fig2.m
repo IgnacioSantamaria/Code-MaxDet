@@ -1,5 +1,5 @@
 % This script shows the performance of the Max-Det BD-RIS solution
-% described in [A]. It allows to reproduce the results of Fig. 2 of [A], showing 
+% described in [A]. It allows to reproduce the results of Fig. 3 of [A], showing 
 % the achievable rate vs SNR for a given MxM BD-RIS. 
 %
 % We compare the following methods:
@@ -132,5 +132,6 @@ ylabel('Rate (b/s/Hz)');
 xlabel('SNR (dB)');
 grid on;
 hold off
+
 
 
