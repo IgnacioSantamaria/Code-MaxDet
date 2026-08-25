@@ -38,7 +38,7 @@ end
 
 %% Max-Det solution
 [Nr,~] = size(F);   % Matrix F is Nr x M
-[~,Nt] = size(G);   % Matrix G is Nt x M
+[Nt,~] = size(G);   % Matrix G is Nt x M
 r = min(Nt,Nr);
 [~,~,VF] = svd(F);
 [~,~,VG] = svd(G);
