@@ -22,8 +22,8 @@ function [Theta, Q] = BDRIS_MaxDet(F,G,blocked,varargin)
 
 % I. Santamaria, UC, Jan 2026
 %
-% [A] I. Santamaria, M. Soleymani, J. Gutierrez, E. Jorswieck, "Optimal symmetric low-rank BD-RIS configuration 
-% maximizing the determinant of a MIMO link" submitted to IEEE
+%  [A] I. Santamaria, M. Soleymani, J. Gutierrez, E. Jorswieck, "On the optimal 
+% symmetric BD-RIS maximizing the determinant of a MIMO link", IEEE
 % Transactions on Signal Processing, 2026.
 
 if nargin < 3
@@ -49,7 +49,7 @@ A = [VF1 conj(VG1)];
 U1 = U(:,1:r);
 U2 = U(:,r+1:2*r);
 Theta =  U1*U1.'- U2*U2.';            % This is the rank-2r Max-Det solution
-Bldiag = blkdiag(eye(r), -1i*eye(r));
+Bldiag = blkdiag(eye(r), 1i*eye(r));
 Q = [U1 U2]*Bldiag;                   % This is the Q factor (Takagi factor)
 
 if blocked == 0     % If direct link is NOT blocked
@@ -62,5 +62,4 @@ if blocked == 0     % If direct link is NOT blocked
     x = fminbnd(fun,0,2*pi);  % Optimize phase
     Theta = exp(1i*x)*Theta;  % Rotated BD-RIS   
     Q = exp(1i*x/2)*Q;        % New Q factor
-
 end

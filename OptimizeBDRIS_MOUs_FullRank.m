@@ -16,7 +16,7 @@ function [Cfinal, Ctotal, Theta] = OptimizeBDRIS_MOUs_FullRank(Hd,F,G,Theta,Rxx,
 % Theta : The initial unitary BD-RIS
 % Rxx : Tx covariance matrix
 % sigma2 : noise variance
-% varargin: structure with the algoritm parameters
+% varargin: structure with the algorithm parameters
 %
 % Output parameters:
 % Cfinal: final rate 
